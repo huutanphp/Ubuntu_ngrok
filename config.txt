@@ -1,4 +1,4 @@
-ngrok_authtoken: 23rG6Pk5nPdctalhFJnCaOevCGg_5MUxr1dNmXE43Lnh7cH8h
+ngrok_authtoken: 1pY317DZq0euZVs19ewxasP0Y01_8aimxirtXnzmDzZWZXrGP
 ngrok_region: ap
-password: khanhnguyen
+password: Huutanphp0709
 
