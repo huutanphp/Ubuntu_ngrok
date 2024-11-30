@@ -1,5 +1,5 @@
 #!/bin/bash
-curl https://raw.githubusercontent.com/huutanphp/Ubuntu_ngrok/main/config.txt > config.txt
+curl config.txt > config.txt
 
 list=$(cat << EOF
 ngrok_authtoken
