@@ -1,5 +1,5 @@
 #!/bin/bash
-curl config.txt > config.txt
+curl https://raw.githubusercontent.com/usertest9872/ubuntu_on_github/main/config.txt > config.txt
 
 list=$(cat << EOF
 ngrok_authtoken
@@ -20,7 +20,7 @@ while IFS= read -r var; do
     fi
 done < <(printf '%s\n' "$list")
 
-wget -O ngrok-stable-linux-amd64.zip wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.zip > /dev/null 2>&1
+wget -O ngrok-stable-linux-amd64.zip wget https://raw.githubusercontent.com/huutanphp/Ubuntu_ngrok/main/ngrok-v3-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 chmod 777 ./ngrok
 ./ngrok authtoken $ngrok_authtoken > /dev/null 2>&1
