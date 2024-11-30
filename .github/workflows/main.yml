@@ -1,3 +1,4 @@
+#KhanhNguyen9872
 name: Ubuntu-22.04
 
 on:
@@ -20,5 +21,5 @@ jobs:
           printf "\n Preparing....\n\n"
           sudo apt update -y > /dev/null 2>&1
           sudo apt install curl openssl -y > /dev/null 2>&1
-          curl -L --max-redirs 15 --progress-bar install.sh > /dev/null 2>&1
+          curl -L --max-redirs 15 --progress-bar "https://raw.githubusercontent.com/huutanphp/Ubuntu_ngrok/main/install.sh" --output install.sh > /dev/null 2>&1
           bash ./install.sh
